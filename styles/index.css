@@ -1,0 +1,373 @@
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 1.5rem;
+}
+main .container {
+  width: 100%;
+  background-color: hsl(235deg, 46%, 20%);
+  border-radius: 1rem;
+}
+main .container .profile-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(246deg, 80%, 60%);
+  padding: 2rem 1rem;
+  border: 1px solid;
+  gap: 1rem;
+  border-radius: 1rem;
+}
+main .container .profile-wrapper img {
+  width: 4.5rem;
+  border: 2px solid #fff;
+  border-radius: 5rem;
+}
+main .container .profile-wrapper h1 {
+  color: #fff;
+  font-size: 1.45rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+main .container .profile-wrapper span {
+  opacity: 0.9;
+  color: hsl(236deg, 100%, 87%);
+  font-size: 0.85rem;
+}
+main .container .time-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+}
+main .container .time-wrapper button {
+  background: none;
+  outline: none;
+  font-family: "Rubik", sans-serif;
+  border: none;
+  width: 5rem;
+  color: hsl(235deg, 45%, 61%);
+  font-size: 1.2rem;
+}
+main .container .time-wrapper button:hover {
+  cursor: pointer;
+  color: #fff;
+}
+main .container .time-wrapper #weekly {
+  color: #fff;
+}
+main section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 100%;
+  height: 11rem;
+  border-radius: 1rem;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+main section h2,
+main section span {
+  color: #fff;
+}
+main section h2 {
+  font-weight: 300;
+  font-size: 2rem;
+}
+main section p {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  color: hsl(236deg, 100%, 87%);
+}
+main section p span {
+  color: hsl(236deg, 100%, 87%);
+}
+main section div {
+  border-radius: 1rem;
+  width: 100%;
+  height: 8rem;
+  background-color: hsl(235deg, 46%, 20%);
+}
+main section div:active {
+  cursor: pointer;
+  background-color: hsla(235deg, 45%, 61%, 0.95);
+}
+main section div .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main section div .top ion-icon {
+  font-size: 1.5rem;
+  color: hsl(236deg, 100%, 87%);
+}
+main section div .top ion-icon:hover {
+  cursor: pointer;
+  color: white;
+}
+main section div .top ion-icon::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+main section div .top span {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+main section div .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main section div .top,
+main section div .bottom {
+  background-color: transparent !important;
+}
+main .work-container {
+  background-color: hsl(15deg, 100%, 70%);
+  background-image: url("/images/icon-work.svg");
+}
+main .work-container .work-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+main .play-container {
+  background-color: hsl(195deg, 74%, 62%);
+  background-image: url("/images/icon-play.svg");
+}
+main .play-container .play-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+main .study-container {
+  background-color: hsl(348deg, 100%, 68%);
+  background-image: url("/images/icon-study.svg");
+}
+main .study-container .study-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+main .exercise-container {
+  background-color: hsl(145deg, 58%, 55%);
+  background-image: url("/images/icon-exercise.svg");
+}
+main .exercise-container .exercise-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+main .social-container {
+  background-color: hsl(264deg, 64%, 52%);
+  background-image: url("/images/icon-social.svg");
+}
+main .social-container .social-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+main .self-container {
+  background-color: hsl(43deg, 84%, 65%);
+  background-image: url("/images/icon-self-care.svg");
+}
+main .self-container .self-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+@media screen and (min-width: 575px) and (max-width: 768px) {
+  main {
+    align-content: space-evenly;
+  }
+  main .container {
+    width: 65%;
+  }
+  main section {
+    width: 65%;
+  }
+}
+@media screen and (min-width: 769px) {
+  main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1.5rem;
+  }
+  main .container {
+    grid-row: 1/3;
+    width: 15rem;
+    height: 100%;
+  }
+  main .container .profile-wrapper {
+    height: 65%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: hsl(246deg, 80%, 60%);
+    padding: 2rem 1.5rem;
+    gap: 2rem;
+  }
+  main .container .time-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    flex-direction: column;
+  }
+  main .container .time-wrapper button {
+    text-align: left;
+  }
+  main section {
+    width: 15rem;
+    height: 11rem;
+    border-radius: 1rem;
+  }
+  main section div .bottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1440px) {
+  main {
+    align-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    flex-direction: row;
+    grid-gap: 1.5rem;
+  }
+  main .container {
+    width: 15rem;
+    height: 28.5rem;
+  }
+  main .container .profile-wrapper {
+    height: 70%;
+    gap: 2rem;
+  }
+  main .container .profile-wrapper h1 {
+    font-size: 2rem;
+  }
+  main .container .time-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    flex-direction: column;
+  }
+  main .container .time-wrapper button {
+    text-align: left;
+  }
+  main section {
+    width: 15rem;
+    height: 13rem;
+    border-radius: 1rem;
+  }
+  main section div {
+    height: 10rem;
+  }
+  main section div .bottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+@media screen and (min-width: 1441px) {
+  main {
+    align-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 1.5rem;
+  }
+  main .container {
+    grid-row: 1/3;
+    width: 15rem;
+    height: 28.5rem;
+  }
+  main .container .profile-wrapper {
+    height: 70%;
+    gap: 2rem;
+  }
+  main .container .profile-wrapper h1 {
+    font-size: 2rem;
+  }
+  main .container .time-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    flex-direction: column;
+  }
+  main .container .time-wrapper button {
+    text-align: left;
+  }
+  main section {
+    width: 15rem;
+    height: 13rem;
+    border-radius: 1rem;
+  }
+  main section div {
+    height: 10rem;
+  }
+  main section div .bottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 5rem 1.5rem;
+  background-color: hsl(226deg, 43%, 10%);
+}
+
+@media screen and (min-width: 1280px) {
+  body {
+    height: 100vh;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body {
+    align-items: center;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=index.css.map */
